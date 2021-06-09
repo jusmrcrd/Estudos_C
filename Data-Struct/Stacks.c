@@ -72,7 +72,8 @@ void push(No* SP, int num){
             printf("\n Removendo inten da pilha \n"); 
             pop(&stack); 
             printStack(&stack); 
-          break; 
+          break;
+            
           default: 
             printf("\nEscolha invalida\n"); 
             show(); 

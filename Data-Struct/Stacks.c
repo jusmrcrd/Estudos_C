@@ -20,15 +20,14 @@ void push(No* SP, int num){
     }else{ 
         newnod->node = *SP; 
         *SP = newnod; 
-    } 
-   
+    }  
   } 
    
   void pop(No* SP){ 
     No aux = *SP; 
      
     if(*SP == NULL){ 
-      printf("      lista vazia..\n"); 
+      printf("      Lista vazia..\n"); 
     }else{ 
       *SP = (*SP)->node; 
       free(aux);  
@@ -45,7 +44,7 @@ void push(No* SP, int num){
   } 
    
   void show(){ 
-    printf("Selecione sua opção \n(1) inserir intem da pilha \n(2) remover intem da pilha \n(3) sair\n\nDigite:"); 
+    printf("Selecione sua opção \n(1) Inserir item da pilha \n(2) Remover item da pilha \n(3) Sair\n\nDigite:"); 
   } 
    
    

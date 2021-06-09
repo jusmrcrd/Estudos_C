@@ -8,36 +8,35 @@ struct stack{
    
 typedef struct stack* No; 
  
-void push(No* st, int num){ 
+void push(No* SP, int num){ 
     No newnod = malloc(sizeof(No)); 
-    No aux = *st; 
-   
+
     newnod->value = num; 
     newnod->node = NULL; 
      
-    if(*st == NULL){ 
-      *st = newnod; 
-      newnod = *st; 
+    if(*SP == NULL){ 
+      *SP = newnod; 
+      newnod = *SP; 
     }else{ 
-        newnod->node = *st; 
-        *st = newnod; 
+        newnod->node = *SP; 
+        *SP = newnod; 
     } 
    
   } 
    
-  void pop(No* st){ 
-    No aux = *st; 
+  void pop(No* SP){ 
+    No aux = *SP; 
      
-    if(*st == NULL){ 
+    if(*SP == NULL){ 
       printf("      lista vazia..\n"); 
     }else{ 
-      *st = (*st)->node; 
+      *SP = (*SP)->node; 
       free(aux);  
     } 
   } 
    
-  void print(No* st){ 
-    No aux = *st; 
+  void print(No* SP){ 
+    No aux = *SP; 
     while(aux != NULL){ 
       printf("           %d\n",aux->value);  
       aux = aux->node; 
@@ -54,7 +53,6 @@ void push(No* st, int num){
     No stack = NULL; 
     int chose,num; 
      
-   
     show(); 
     scanf("%d",&chose); 
      

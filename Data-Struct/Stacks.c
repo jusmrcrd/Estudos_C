@@ -35,7 +35,7 @@ void push(No* SP, int num){
     } 
   } 
    
-  void print(No* SP){ 
+  void printStack(No* SP){ 
     No aux = *SP; 
     while(aux != NULL){ 
       printf("           %d\n",aux->value);  
@@ -59,29 +59,24 @@ void push(No* SP, int num){
     while(chose != 3){ 
        
       switch(chose){ 
-          case 1:  
+        case 1:  
             printf("\nDigite um numero para colocar na pilha.."); 
             scanf("%d",&num); 
             push(&stack,num); 
-            printf("\n Inserindo intem da pilha\n"); 
-            print(&stack); 
-          break; 
+            printf("\n Inserindo item da pilha\n"); 
+            printStack(&stack); 
+        break; 
            
-          case 2: 
+        case 2: 
             printf("\n Removendo item da pilha \n"); 
             pop(&stack); 
-<<<<<<< HEAD
-            print(&stack); 
-          break; 
-=======
             printStack(&stack); 
-          break;
-            
->>>>>>> 368890aef6915d3b4c195b74b101daeb8d8f8a2d
-          default: 
+        break; 
+          
+        default: 
             printf("\nEscolha invalida\n"); 
             show(); 
-          break;  
+        break;  
       } 
       show(); 
       scanf("%d",&chose); 

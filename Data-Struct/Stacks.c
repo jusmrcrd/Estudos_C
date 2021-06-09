@@ -8,35 +8,36 @@ struct stack{
    
 typedef struct stack* No; 
  
-void push(No* SP, int num){ 
+void push(No* st, int num){ 
     No newnod = malloc(sizeof(No)); 
+    No aux = *st; 
    
     newnod->value = num; 
     newnod->node = NULL; 
      
-    if(*SP == NULL){ 
-      *SP = newnod; 
-      newnod = *SP; 
+    if(*st == NULL){ 
+      *st = newnod; 
+      newnod = *st; 
     }else{ 
-        newnod->node = *SP; 
-        *SP = newnod; 
+        newnod->node = *st; 
+        *st = newnod; 
     } 
    
   } 
    
-  void pop(No* SP){ 
-    No aux = *SP; 
+  void pop(No* st){ 
+    No aux = *st; 
      
-    if(*SP == NULL){ 
+    if(*st == NULL){ 
       printf("      lista vazia..\n"); 
     }else{ 
-      *SP = (*SP)->node; 
+      *st = (*st)->node; 
       free(aux);  
     } 
   } 
    
-  void printStack(No* SP){ 
-    No aux = *SP; 
+  void print(No* st){ 
+    No aux = *st; 
     while(aux != NULL){ 
       printf("           %d\n",aux->value);  
       aux = aux->node; 
@@ -65,13 +66,13 @@ void push(No* SP, int num){
             scanf("%d",&num); 
             push(&stack,num); 
             printf("\n Inserindo intem da pilha\n"); 
-            printStack(&stack); 
+            print(&stack); 
           break; 
            
           case 2: 
-            printf("\n Removendo inten da pilha \n"); 
+            printf("\n Removendo item da pilha \n"); 
             pop(&stack); 
-            printStack(&stack); 
+            print(&stack); 
           break; 
           default: 
             printf("\nEscolha invalida\n"); 
@@ -80,7 +81,7 @@ void push(No* SP, int num){
       } 
       show(); 
       scanf("%d",&chose); 
-    }
+    } 
     return 0; 
   } 
 

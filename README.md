@@ -1,1 +1,1 @@
-Area para a aplicação e demostração de estruturas de dados em C/C++
+Area para a aplicação e demonstração de algoritmos e estrutura de dados em C.

@@ -70,8 +70,14 @@ void push(No* SP, int num){
           case 2: 
             printf("\n Removendo item da pilha \n"); 
             pop(&stack); 
+<<<<<<< HEAD
             print(&stack); 
           break; 
+=======
+            printStack(&stack); 
+          break;
+            
+>>>>>>> 368890aef6915d3b4c195b74b101daeb8d8f8a2d
           default: 
             printf("\nEscolha invalida\n"); 
             show(); 

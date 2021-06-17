@@ -44,7 +44,7 @@ void push(No* SP, int num){
   } 
    
   void show(){ 
-    printf("Selecione sua opção \n(1) Inserir item da pilha \n(2) Remover item da pilha \n(3) Sair\n\nDigite:"); 
+    printf("Selecione sua opção \n(1) Inserir item na pilha \n(2) Remover item na pilha \n(3) Sair\n\nDigite:"); 
   } 
    
    
@@ -62,12 +62,12 @@ void push(No* SP, int num){
             printf("\nDigite um numero para colocar na pilha.."); 
             scanf("%d",&num); 
             push(&stack,num); 
-            printf("\n Inserindo item da pilha\n"); 
+            printf("\n Inserindo item na pilha\n"); 
             printStack(&stack); 
         break; 
            
         case 2: 
-            printf("\n Removendo item da pilha \n"); 
+            printf("\n Removendo item na pilha \n"); 
             pop(&stack); 
             printStack(&stack); 
         break; 

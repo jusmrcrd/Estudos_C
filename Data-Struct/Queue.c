@@ -6,12 +6,9 @@ struct queue{
 
     int value;
     struct queue* node;
-
 };
 
-
 typedef struct queue* No;
-
 
 void push(No *SP, int num){
     No newnod = malloc(sizeof(No));
@@ -24,16 +21,14 @@ void push(No *SP, int num){
         *SP = newnod;
         newnod = *SP;
     }else{
-        while(aux->node != NULL)
+        while(aux->node != NULL){
             aux = aux->node;
-        
+        }
         aux->node = newnod;
     }
 }
 
-
 void pop(No* SP){
-    
     if(*SP == NULL){
         printf("fila vazia...");
     }else{
@@ -42,7 +37,6 @@ void pop(No* SP){
         *SP = (*SP)->node;
         free(temp);
     }
-
 }
 
 void printQueue(No *SP){
@@ -55,7 +49,6 @@ void printQueue(No *SP){
     printf("\n\n");
 }
 
-
 void show(){ 
         printf("\nSelecione sua opção \n(1) Inserir item na fila \n(2) Remover item na fila \n(3) Sair\n\nDigite:"); 
 } 
@@ -67,7 +60,6 @@ int main(int argc, char* argv[]){
     scanf("%d",&chose);
 
     while(chose != 3){
-
         switch(chose){
             case 1:
                     printf("\nDigite um numero para colocar na fila.."); 
@@ -80,19 +72,16 @@ int main(int argc, char* argv[]){
             case 2:
                     
                     printf("\n Removendo item na fila \n");
-                   pop(&queue); 
+                    pop(&queue); 
                     printQueue(&queue);
                     break;
             default:
                     printf("\nnumero invalido. tente novamente\n");
                     break;
-
         }
         show();
         scanf("%d",&chose);
     }
     printf("\nfinalizando programa...\n");
-
     return 0;
 }
-

@@ -79,7 +79,8 @@ void push(No* SP, int num){
       } 
       show(); 
       scanf("%d",&chose); 
-    } 
+    }
+    printf("\nfim do programa...");
     return 0; 
   } 
 

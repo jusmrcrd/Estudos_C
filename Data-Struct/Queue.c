@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
 struct queue{
 
     int value;
@@ -70,7 +69,6 @@ int main(int argc, char* argv[]){
                     break;
 
             case 2:
-                    
                     printf("\n Removendo item na fila \n");
                     pop(&queue); 
                     printQueue(&queue);

@@ -3,7 +3,7 @@
 
 struct queue{
     int value;
-    struct queue* node;
+    struct queue* Ptr_node;
 };
 
 typedef struct queue* No;
@@ -15,16 +15,16 @@ void push(No *QPtr_node, int number){
     No QPtr_aux = *QPtr_node;
 
     Ptr_newnod->value = number;
-    Ptr_newnod->node = NULL;
+    Ptr_newnod->Ptr_node = NULL;
 
     if(*QPtr_node == NULL){
         *QPtr_node = Ptr_newnod;
         Ptr_newnod = *QPtr_node;
     }else{
-        while(QPtr_aux->node != NULL){
-            QPtr_aux = QPtr_aux->node;
+        while(QPtr_aux->Ptr_node != NULL){
+            QPtr_aux = QPtr_aux->Ptr_node;
         }
-        QPtr_aux->node = Ptr_newnod;
+        QPtr_aux->Ptr_node = Ptr_newnod;
     }
 }
 
@@ -35,7 +35,7 @@ void pop(No* QPtr_node){
     }else{
         No QPtr_temp;
         QPtr_temp = *QPtr_node;
-        *QPtr_node = (*QPtr_node)->node;
+        *QPtr_node = (*QPtr_node)->Ptr_node;
         free(QPtr_temp);
     }
 }
@@ -45,7 +45,7 @@ void printQueue(No *SP_node){
     printf("\n");
     while(SP_aux != NULL){
             printf(" %d ",SP_aux->value);
-            SP_aux = SP_aux->node;
+            SP_aux = SP_aux->Ptr_node;
     }
     printf("\n\n");
 }

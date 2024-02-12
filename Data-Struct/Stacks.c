@@ -3,42 +3,42 @@
    
 struct stack{ 
       int value; 
-      struct stack* node; 
+      struct stack* Ptr_node; 
   }; 
    
 typedef struct stack* No; 
  
-void push(No* SP, int num){ 
-    No newnod = malloc(sizeof(No)); 
+void push(No* SPtr_node, int num){ 
+    No SPtr_newnod = malloc(sizeof(No)); 
 
-    newnod->value = num; 
-    newnod->node = NULL; 
+    SPtr_newnod->value = num; 
+    SPtr_newnod->Ptr_node = NULL; 
      
-    if(*SP == NULL){ 
-      *SP = newnod; 
-      newnod = *SP; 
+    if(*SPtr_node == NULL){ 
+      *SPtr_node = SPtr_newnod; 
+      SPtr_newnod = *SPtr_node; 
     }else{ 
-        newnod->node = *SP; 
-        *SP = newnod; 
+        SPtr_newnod->Ptr_node = *SPtr_node; 
+        *SPtr_node = SPtr_newnod; 
     }  
   } 
    
-  void pop(No* SP){ 
-    No aux = *SP; 
+  void pop(No* SPtr_node){ 
+    No aux = *SPtr_node; 
      
-    if(*SP == NULL){ 
+    if(*SPtr_node == NULL){ 
       printf("      Lista vazia..\n"); 
     }else{ 
-      *SP = (*SP)->node; 
+      *SPtr_node = (*SPtr_node)->Ptr_node; 
       free(aux);  
     } 
   } 
    
-  void printStack(No* SP){ 
-    No aux = *SP; 
-    while(aux != NULL){ 
-      printf("           %d\n",aux->value);  
-      aux = aux->node; 
+  void printStack(No* SPtr_node){ 
+    No SPtr_aux = *SPtr_node; 
+    while(SPtr_aux != NULL){ 
+      printf("           %d\n",SPtr_aux->value);  
+      SPtr_aux = SPtr_aux->Ptr_node; 
     } 
     printf("\n"); 
   } 

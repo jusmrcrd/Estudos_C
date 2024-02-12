@@ -2,48 +2,50 @@
 #include<stdlib.h>
 
 struct queue{
-
     int value;
     struct queue* node;
 };
 
 typedef struct queue* No;
 
-void push(No *SP, int num){
-    No newnod = malloc(sizeof(No));
-    No aux = *SP;
 
-    newnod->value = num;
-    newnod->node = NULL;
+//insert item in Queue
+void push(No *QPtr_node, int number){
+    No Ptr_newnod = malloc(sizeof(No));
+    No QPtr_aux = *QPtr_node;
 
-    if(*SP == NULL){
-        *SP = newnod;
-        newnod = *SP;
+    Ptr_newnod->value = number;
+    Ptr_newnod->node = NULL;
+
+    if(*QPtr_node == NULL){
+        *QPtr_node = Ptr_newnod;
+        Ptr_newnod = *QPtr_node;
     }else{
-        while(aux->node != NULL){
-            aux = aux->node;
+        while(QPtr_aux->node != NULL){
+            QPtr_aux = QPtr_aux->node;
         }
-        aux->node = newnod;
+        QPtr_aux->node = Ptr_newnod;
     }
 }
 
-void pop(No* SP){
-    if(*SP == NULL){
-        printf("fila vazia...");
+//remove item in Queue
+void pop(No* QPtr_node){
+    if(*QPtr_node == NULL){
+        printf("\nfila vazia...\n");
     }else{
-        No temp;
-        temp = *SP;
-        *SP = (*SP)->node;
-        free(temp);
+        No QPtr_temp;
+        QPtr_temp = *QPtr_node;
+        *QPtr_node = (*QPtr_node)->node;
+        free(QPtr_temp);
     }
 }
-
-void printQueue(No *SP){
-    No aux = *SP;
+// print queue in terminal
+void printQueue(No *SP_node){
+    No SP_aux = *SP_node;
     printf("\n");
-    while(aux != NULL){
-            printf(" %d ",aux->value);
-            aux = aux->node;
+    while(SP_aux != NULL){
+            printf(" %d ",SP_aux->value);
+            SP_aux = SP_aux->node;
     }
     printf("\n\n");
 }
@@ -67,9 +69,8 @@ int main(int argc, char* argv[]){
                     printf("\n Inserindo item na fila\n");
                     printQueue(&queue);
                     break;
-
             case 2:
-                    printf("\n Removendo item na fila \n");
+                    printf("\nRemovendo item na fila \n");
                     pop(&queue); 
                     printQueue(&queue);
                     break;

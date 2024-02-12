@@ -7,15 +7,15 @@ Este repositório contém exemplos e exercícios relacionados ao estudo sobre a 
 1. "C: Como Programar" Pauld. J Deitel, Harvey Deitel 
    - Capítulos abordados: 
 
-2. "Estruturas de Dados Usando C" Aaron M. Tenenbaum, Yedidyah Langsam, Moshe J. Augenstein
+2. "Estruturas de Dados Usando C" por Aaron M. Tenenbaum, Yedidyah Langsam, Moshe J. Augenstein
     - Capítulos abordados: 
 
 
-3. "C completo e total" Herpert Schildt
+3. "C completo e total" por Herpert Schildt
     - Capítulos abordados: 
     -   Capitulo 22. Análise de Expressões e Avaliação 
     -   Capitulo 23. Solução de Problemas de inteligência Artificial
-    -    Capitulo 28. Interpretadores C 
+    -   Capitulo 28. Interpretadores C 
 
 4. "Algoritmos e Estrutura de Dados" por Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest e Clifford Stein
     - Capítulos abordados: 

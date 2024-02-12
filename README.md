@@ -13,9 +13,9 @@ Este repositório contém exemplos e exercícios relacionados ao estudo sobre a 
 
 3. "C completo e total" Herpert Schildt
     - Capítulos abordados: 
-        Capitulo 22. Análise de Expressões e Avaliação 
-        Capitulo 23. Solução de Problemas de inteligência Artificial
-        Capitulo 28. Interpretadores C 
+    -   Capitulo 22. Análise de Expressões e Avaliação 
+    -   Capitulo 23. Solução de Problemas de inteligência Artificial
+    -    Capitulo 28. Interpretadores C 
 
 4. "Algoritmos e Estrutura de Dados" por Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest e Clifford Stein
     - Capítulos abordados: 

@@ -1,6 +1,6 @@
-# Estrutura de Dados em C
+# Estudos De Programação na linguagem C
 
-Este repositório contém exemplos e exercícios relacionados ao estudo de estrutura de dados em C, baseados nos livros que utilizei durante meu aprendizado.
+Este repositório contém exemplos e exercícios relacionados ao estudo sobre a linguagem de Programação C, baseados nos livros que utilizei durante meu aprendizado.
 
 ## Livros Utilizados
 
@@ -8,17 +8,17 @@ Este repositório contém exemplos e exercícios relacionados ao estudo de estru
    - Capítulos abordados: 
 
 2. "Estruturas de Dados Usando C" Aaron M. Tenenbaum, Yedidyah Langsam, Moshe J. Augenstein
-     Capítulos abordados:
+    - Capítulos abordados: 
 
 
 3. "C completo e total" Herpert Schildt
-     Capítulos abordados: 
+    - Capítulos abordados: 
         Capitulo 22. Análise de Expressões e Avaliação 
         Capitulo 23. Solução de Problemas de inteligência Artificial
         Capitulo 28. Interpretadores C 
 
 4. "Algoritmos e Estrutura de Dados" por Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest e Clifford Stein
-     Capítulos abordados: 
+    - Capítulos abordados: 
  
 
 ## Conteúdo

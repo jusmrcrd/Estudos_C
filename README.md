@@ -24,7 +24,7 @@ Este repositório contém exemplos e exercícios relacionados ao estudo sobre a 
 ## Conteúdo
 
 O conteúdo deste repositório inclui: 
-Data Structures[Stack](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/Stacks.c) [Queue](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/Queue.c) [Heap](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/Heap.c) [Tree](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/Tree.c) [TreeVector](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/TreeVector.c)
+   Data Structures: [Stack](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/Stacks.c) [Queue](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/Queue.c) [Heap](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/Heap.c) [Tree](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/Tree.c) [TreeVector](https://github.com/jusmrcrd/Estudos_C/blob/main/Data-Struct/TreeVector.c)
 
 
 ## Como Utilizar

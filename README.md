@@ -32,7 +32,7 @@ O conteúdo deste repositório inclui:
    [Huffman code](https://github.com/jusmrcrd/Estudos_C/blob/main/Data%20Struct/Huffman.c) 
    [Tree](https://github.com/jusmrcrd/Estudos_C/blob/main/Data%20Struct/Tree.c) [TreeVector](https://github.com/jusmrcrd/Estudos_C/blob/main/Data%20Struct/TreeVector.c)
    
-   Sorting:
+   Sorting Algorithm:
    
 
 ## Como Utilizar
